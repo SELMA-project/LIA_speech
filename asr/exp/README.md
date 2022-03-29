@@ -16,5 +16,5 @@ pt-br.tar available at https://filesender.renater.fr/?s=download&token=e6fb7f23-
 # Dialectal Tunisian trained models + Python scripts
 tun/
 
-tun.tar available at 
+tun.tar available at https://filesender.renater.fr/?s=download&token=37eeda81-41d1-4b31-bb2f-622248d34fba
 
