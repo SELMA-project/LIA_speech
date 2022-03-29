@@ -1,0 +1,13 @@
+# ninja log v5
+45	1473	1642436188767069853	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/clib/libbleu/module.o	7a3cf03a74d4ca6c
+44	1517	1642436188827068598	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/clib/libbleu/libbleu.o	c13ac25aaa0b1807
+4	5853	1642436198186872931	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/data/data_utils_fast.o	92ad9360eb23487a
+2	5257	1642436204270745774	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/data/token_block_utils_fast.o	b14ba739d4d01b2
+12	30809	1642436236246077806	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/clib/libbase/balanced_assignment.o	db69f334e2c6656a
+328	25747	1642436263865501270	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/clib/libnat/edit_dist.o	afd4b47ae3ed7838
+35	5865	1642436618050135609	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/data/data_utils_fast.o	92ad9360eb23487a
+12	5353	1642436623830015741	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/data/token_block_utils_fast.o	b14ba739d4d01b2
+3	5225	1642436677188909522	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/data/data_utils_fast.o	92ad9360eb23487a
+14	5156	1642436682752794212	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/data/token_block_utils_fast.o	b14ba739d4d01b2
+13	5394	1642437771326969946	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/data/data_utils_fast.o	92ad9360eb23487a
+9	5408	1642437777198856891	/data/coros1/mzanonboito/fairseq/build/temp.linux-x86_64-3.9/fairseq/data/token_block_utils_fast.o	b14ba739d4d01b2

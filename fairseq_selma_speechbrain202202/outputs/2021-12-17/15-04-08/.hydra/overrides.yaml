@@ -1,0 +1,3 @@
+- distributed_training.distributed_world_size=1
+- task.data=/data/coros1/mzanonboito/selma/data/tamasheq_only_w2v2_features/tmh-fra/finetuning/
+- model.w2v_path=/data/coros1/mzanonboito//selma/ssl_models/tamasheq_only/checkpoint_last.pt

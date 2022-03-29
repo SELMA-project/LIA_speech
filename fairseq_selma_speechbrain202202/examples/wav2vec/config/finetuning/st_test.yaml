@@ -1,0 +1,77 @@
+# @package _group_
+
+common:
+  fp16: true
+  log_format: json
+  log_interval: 200
+  tensorboard_logdir: ???
+
+checkpoint:
+  no_epoch_checkpoints: false
+  best_checkpoint_metric: loss
+  save_dir: ???
+  save_interval_updates: 10000
+
+task:
+  _name: audio_finetuning
+  data: ???
+  normalize: true
+  autoregressive: true
+  eval_blue: true
+  eval_bleu_remove_bpe: true
+  labels: ltr
+
+
+dataset:
+  num_workers: 4
+  max_tokens: 1400000
+  skip_invalid_size_inputs_valid_test: true
+  valid_subset: valid
+  train_subset: train
+#  target_dictionary: spm_unigram1000_st.txt
+
+
+criterion:
+  _name: label_smoothed_cross_entropy
+  zero_infinity: true
+
+optimization:
+  max_update: 80000
+  lr: [0.00003]
+  sentence_avg: true
+  update_freq: [16]
+
+optimizer:
+  _name: adam
+  adam_betas: (0.9,0.98)
+  adam_eps: 1e-08
+
+lr_scheduler:
+  _name: tri_stage
+  phase_ratio: [0.1, 0.4, 0.5]
+  final_lr_scale: 0.05
+
+model:
+  _name: wav2vec_seq2seq
+  w2v_path: ???
+  apply_mask: true
+  mask_prob: 0.65
+  mask_channel_prob: 0.5
+  mask_channel_length: 64
+  layerdrop: 0.1
+  activation_dropout: 0.1
+  feature_grad_mult: 0.0
+  freeze_finetune_updates: 0
+
+#bpe_tokenizer:
+#  bpe: sentencepiece
+#  sentencepiece_model: /data/coros1/mzanonboito/selma/data/tamasheq_only_w2v2_features/tmh-fra/spm_unigram1000_st.model
+#input_channels: 1
+#input_feat_per_channel: 768
+#sampling_alpha: 1.0
+#transforms:
+#  '*':
+#  - utterance_cmvn
+#  _train:
+#  - utterance_cmvn
+
